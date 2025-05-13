@@ -5,6 +5,7 @@ import Student from "./models/student.js"
 import cors from "cors";
 import sendEmail from "./mailer.js";
 import dashboardRoute from "./routes/dashboard.js";
+
 const app = express();
 dotenv.config();
 app.use(cors());
@@ -12,7 +13,8 @@ app.use(cors());
 connectDB();
 app.use(express.json());
 app.use("/dashboard",dashboardRoute);
-app.post("/student", async (req, res) => {
+
+app.post("/internship", async (req, res) => {
     console.log(req.body.data);
     try {
         const user = await Student.create(req.body.data);
@@ -23,7 +25,7 @@ app.post("/student", async (req, res) => {
         res.status(500).json({ "message": error.message })
     }
 })
-app.post("/student/email", (req, res) => {
+app.post("/support/email", (req, res) => {
     try {
         const { email, subject, body } = req.body;
         sendEmail(email, subject, body);
