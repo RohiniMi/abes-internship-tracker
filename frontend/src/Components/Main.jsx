@@ -24,16 +24,31 @@ const Main = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        const requiredFields = [
+            "rollno", "name", "email", "contact",
+            "semester", "branch", "companyname",
+            "type", "doj", "doc"
+        ];
+
+        const hasEmptyField = requiredFields.some(field => !data[field]);
+
+        if (hasEmptyField) {
+            alert("Please fill all the required fields before submitting.");
+            return;
+        }
+
         try {
-            const res = await axios.post("https://abes-internship-tracker.onrender.com/student", {data});
+            const res = await axios.post("http://localhost:7890/student", { data });
             console.log("Data saved successfully", res.status);
             alert("Data has been sent successfully!");
             setData(initialData);
-        } catch (err) {
-            console.error("Error sending email:", err);
-            alert("Failed to send the message. Please try again.");
+        } catch (error) {
+            console.error("Error while sending data:", error);
+            alert("There was an error sending your data.");
         }
     };
+
 
     return (
         <div id="main">
