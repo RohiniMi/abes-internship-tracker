@@ -1,0 +1,66 @@
+.support-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #e28743;
+    color: white;
+    padding: 12px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transition: background-color 0.3s ease;
+}
+
+.support-btn:hover {
+    background-color: #c46d30;
+}
+
+#mail {
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    width: 350px;
+    background-color: #f2f2f2;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.popup-content input,
+.popup-content textarea {
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+#send-email {
+    background-color: #e28743;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    float: right;
+}
+
+#send-email:hover {
+    background-color: #c46d30;
+}
