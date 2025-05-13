@@ -20,7 +20,7 @@ const Support = () => {
     const handleSend = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("http://localhost:7890/student/email", data);
+            const res = await axios.post("https://abes-internship-tracker.onrender.com/student/email", data);
             console.log("Mail sent successfully", res.status);
             alert("Support request sent successfully!");
             setIsOpen(false);
