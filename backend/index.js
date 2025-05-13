@@ -4,13 +4,14 @@ import connectDB from "./config/db.js";
 import Student from "./models/student.js"
 import cors from "cors";
 import sendEmail from "./mailer.js";
+import dashboardRoute from "./routes/dashboard.js";
 const app = express();
 dotenv.config();
 app.use(cors());
-// sendEmail('rohinimittal246@gmail.com');
+
 connectDB();
 app.use(express.json());
-
+app.use("/dashboard",dashboardRoute);
 app.post("/student", async (req, res) => {
     console.log(req.body.data);
     try {
@@ -25,10 +26,10 @@ app.post("/student", async (req, res) => {
 app.post("/student/email", (req, res) => {
     try {
         const { email, subject, body } = req.body;
-        sendEmail(email,subject,body);
-        res.status(200).json({"message":"mail sent successfully."});
+        sendEmail(email, subject, body);
+        res.status(200).json({ "message": "mail sent successfully." });
     }
-    catch(error) {
+    catch (error) {
         res.status(500).json({ "message": error.message })
     }
 })
