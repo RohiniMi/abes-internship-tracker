@@ -39,7 +39,7 @@ const Main = () => {
         }
 
         try {
-            const res = await axios.post("https://abes-internship-tracker.onrender.com/student", { data });
+            const res = await axios.post("https://abes-internship-tracker.onrender.com/internship", { data });
             console.log("Data saved successfully", res.status);
             alert("Data has been sent successfully!");
             setData(initialData);
