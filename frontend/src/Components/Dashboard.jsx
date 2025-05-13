@@ -5,7 +5,7 @@ const Dashboard = () => {
     const getData = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.get("http://localhost:7890/dashboard");
+            const res = await axios.get("https://abes-internship-tracker.onrender.com/dashboard");
             console.log("Data fetched Successfully!", res.status,res.data);
             // res.data.filter((d)=>console.log(d));
             alert("Data fetched Successfully!");
