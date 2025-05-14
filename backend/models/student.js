@@ -1,6 +1,5 @@
-import mongoose, { mongo } from "mongoose";
+import mongoose from "mongoose";
 const StudentSchema = new mongoose.Schema({
-
     rollno: { type: String, required: true },
     name: { type: String, required: true },
     email: { type: String, required: true },
@@ -12,7 +11,6 @@ const StudentSchema = new mongoose.Schema({
     doj: { type: String, required: true },
     doc: { type: String, required: true },
     internshipLetter: { type: String, required: true },
-
 })
 const Student = mongoose.model("stuColl", StudentSchema);
 export default Student;
