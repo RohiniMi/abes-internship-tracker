@@ -1,18 +1,28 @@
-import React from 'react'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from "./Components/Header.jsx";
 import Main from "./Components/Main.jsx";
 import Support from "./Components/Support.jsx";
 import Footer from "./Components/Footer.jsx";
+import Login from "./Components/Login.jsx";
 import "./App.css";
+import Dashboard from './Components/Dashboard.jsx';
+
 const App = () => {
   return (
-    <div id="root">
-      <Header/>
-      <Main/>
-      <Support/>
-      <Footer/>
-    </div>
-  )
-}
+    <Router>
+      <div id="root">
+        <Header />
+        <Routes>
+          <Route path="/home" element={<Dashboard />} />
+          <Route path="/internship" element={<Main />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+        <Support />
+        <Footer />
+      </div>
+    </Router>
+  );
+};
 
-export default App
+export default App;
