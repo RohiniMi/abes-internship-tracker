@@ -1,0 +1,67 @@
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 3rem;
+}
+.card-header {
+    background-color: #003366; /* deep navy blue */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+.card-header h3 {
+    margin: 0;
+    font-size: 24px;
+}
+.card-body {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+.card-body p {
+    font-size: 19px;
+    margin: 10px 0;
+}
+.status-box {
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    color: #fff;
+}
+.paid-status {
+    background-color: #28a745;
+}
+.unpaid-status {
+    background-color: #dc3545;
+}
+.sub-status {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.sub-status p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.download-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 16px;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
