@@ -8,6 +8,7 @@ const Main = () => {
         email: "",
         contact: "",
         semester: "",
+        year: "",
         branch: "",
         companyname: "",
         type: "",
@@ -27,7 +28,7 @@ const Main = () => {
 
         const requiredFields = [
             "rollno", "name", "email", "contact",
-            "semester", "branch", "companyname",
+            "semester", "year", "branch", "companyname",
             "type", "doj", "doc"
         ];
 
@@ -39,7 +40,7 @@ const Main = () => {
         }
 
         try {
-            const res = await axios.post("https://abes-internship-tracker.onrender.com/internship", { data });
+            const res = await axios.post("http://localhost:7890/internship", { data });
             console.log("Data saved successfully", res.status);
             alert("Data has been sent successfully!");
             setData(initialData);
@@ -73,6 +74,13 @@ const Main = () => {
                         <option value="6 semester">6 semester</option>
                         <option value="7 semester">7 semester</option>
                         <option value="8 semester">8 semester</option>
+                    </select>
+
+                    <label htmlFor="semester">Year:</label>
+                    <select id="year" name="year" required value={data.year} onChange={handleChange}>
+                        <option value="">-- Select Year --</option>
+                        <option value="Third">Third</option>
+                        <option value="Final">Final</option>
                     </select>
 
                     <label htmlFor="branch">Branch:</label>
