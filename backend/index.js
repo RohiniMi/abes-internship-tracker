@@ -5,9 +5,8 @@ import Student from "./models/student.js"
 import cors from "cors";
 import sendEmail from "./mailer.js";
 import dashboardRoutes from "./routes/dashboard.js";
+import notificationRoutes from "./routes/notification.js";
  
-import { findAllData } from "./services/dashboard.js";
-findAllData();
 const app = express();
 dotenv.config();
 app.use(cors());
@@ -15,11 +14,11 @@ app.use(cors());
 connectDB();
 app.use(express.json());
 app.use("/dashboard",dashboardRoutes);
-
+app.use("/notification",notificationRoutes);
 app.post("/internship", async (req, res) => {
     console.log(req.body.data);
     try {
-        const user = await Student.create(req.body.data);
+        const user = await Student.StudentRaw.create(req.body.data);
         if (user) {
             res.status(200).json({ "message": 'successful' });
         }

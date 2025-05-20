@@ -1,0 +1,5 @@
+import {findDepartmentWiseNotification} from "../services/notification.js";
+export const departmentWiseNotificationController = async (req, res) => {
+   const response = await findDepartmentWiseNotification(req.body.dept);
+   res.status(response.status).json({ data: response.data});
+}
