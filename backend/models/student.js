@@ -14,4 +14,5 @@ const StudentSchema = new mongoose.Schema({
     internshipLetter: { type: String, required: true },
 })
 const Student = mongoose.model("stuColl", StudentSchema);
-export default Student;
+const StudentRaw = mongoose.model("stuCollRaw", StudentSchema);
+export default {Student,StudentRaw};

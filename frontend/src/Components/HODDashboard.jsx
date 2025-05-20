@@ -3,10 +3,11 @@ import axios from 'axios';
 import * as XLSX from 'xlsx';
 import { saveAs } from 'file-saver';
 import "./Dashboard2.css";
-const Dashboard2 = () => {
+const HODDashboard = () => {
     const [data, setData] = useState([]);
     const [selectedBatch, setSelectedBatch] = useState('All');
     const [year,setYear] = useState("");
+    const dept = "CSE";
 
     useEffect(() => {
         getData();
@@ -14,7 +15,7 @@ const Dashboard2 = () => {
 
     const getData = async () => {
         try {
-            const res = await axios.post("http://localhost:7890/dashboard/batch", { selectedBatch });
+            const res = await axios.post("http://localhost:7890/dashboard/batch/dept", { selectedBatch,dept });
             setData(res.data.data[0]);
             setYear(res.data.batch);
         } catch (err) {
@@ -27,7 +28,7 @@ const Dashboard2 = () => {
     };
     const downloadExcel = async () => {
         try {
-            const res = await axios.post("http://localhost:7890/dashboard/batch/download", { selectedBatch });
+            const res = await axios.post("http://localhost:7890/dashboard/batch/dept/download", { selectedBatch,dept });
             const jsonData = res.data.data;
             if (!jsonData || jsonData.length === 0) {
                 alert("No data available to export.");
@@ -48,7 +49,7 @@ const Dashboard2 = () => {
 
     return (
         <div className="dashboard-container">
-            <h2>Internship Dashboard</h2>
+            <h2>CSE Department Internship Dashboard</h2>
             <div className="controls">
                 <label htmlFor="batchSelect">Select Batch: </label>
                 <select id="batchSelect" onChange={handleBatchChange} value={selectedBatch}>
@@ -92,4 +93,4 @@ const Dashboard2 = () => {
     )
 }
 
-export default Dashboard2;
+export default HODDashboard;
