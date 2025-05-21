@@ -13,3 +13,20 @@ export const findDepartmentWiseNotification = async (dept) => {
         return { status, data };
     }
 }
+export const saveInternship = async (id) => {
+    let status = 500;
+    let message = "Unsuccessful";
+    try {
+        const data = await Student.StudentRaw.findById(id); 
+        if (data) {
+            await Student.Student.create(data.toObject()); 
+            await Student.StudentRaw.findByIdAndDelete(id);
+            status = 200;
+            message = "Successful";
+        }
+        return { status, message };
+    } catch (error) {
+        console.error("Error fetching student data:", error);
+        return { status, message };
+    }
+}
