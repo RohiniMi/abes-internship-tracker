@@ -6,6 +6,9 @@ const Notification = () => {
   const [data, setData] = useState([]);
   const [showPopup, setShowPopup] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
+  const [toastMessage, setToastMessage] = useState('');
+  const [showToast, setShowToast] = useState(false);
+
 
   useEffect(() => {
     getData();
@@ -15,6 +18,9 @@ const Notification = () => {
     try {
       const res = await axios.post("http://localhost:7890/notification/dept", { dept: "CSE" });
       setData(res.data.data);
+      (res.data.data).forEach(element => {
+        console.log(element._id);
+      });
       console.log(res.data.data);
 
     } catch (err) {
@@ -23,9 +29,26 @@ const Notification = () => {
     }
   };
 
-  const handleAccept = (item) => {
-    alert(`Accepted request of ${item.name}`);
+  const handleAccept = async (item) => {
+    try {
+      const res = await axios.post("http://localhost:7890/notification/internship", { "id": item._id });
+      if (res.status === 200) {
+        setToastMessage(`Accepted request of ${item.name}`);
+        setShowToast(true);
+        setTimeout(() => { setShowToast(false); window.location.reload(); }, 3000);
+      } else {
+        setToastMessage(`Rejected request of ${item.name}`);
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 3000);
+      }
+
+    } catch (err) {
+      console.error("Error fetching data:", err);
+      alert("Failed to fetch. Please try again.");
+    }
+
   };
+
 
   const handleReject = (item) => {
     setSelectedItem(item);
@@ -43,14 +66,22 @@ const Notification = () => {
   };
 
   return (
+
     <div className="notification-container">
+      {showToast && (
+        <div className="custom-toast">
+          {toastMessage}
+          <div className="progress-bar"></div>
+        </div>
+      )}
+
       <h2 className="title">Department Notifications</h2>
       {data.length > 0 ? (
         data.map((item, index) => (
           <div key={index} className="notification-card">
             <h3 className="student-name">{item.name.toUpperCase()}</h3>
-            <p className="branch-year">{item.branch} - Batch {item.year}</p>
-            <p><strong>Company:</strong> {item.companyname}</p>
+            <p className="branch-year">{item.branch} {item.year} - Year</p>
+            <p><strong>Company:</strong> {item.companyname.toUpperCase()}</p>
             <p><strong>Joining Date:</strong> {item.doj}</p>
             <p><strong>Completion Date:</strong> {item.doc}</p>
             <p><strong>Internship Type:</strong> {item.type}</p>
