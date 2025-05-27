@@ -12,6 +12,7 @@ const StudentSchema = new mongoose.Schema({
     doj: { type: String, required: true },
     doc: { type: String, required: true },
     internshipLetter: { type: String, required: true },
+    stipend : {type:Number}
 })
 const Student = mongoose.model("stuColl", StudentSchema);
 const StudentRaw = mongoose.model("stuCollRaw", StudentSchema);

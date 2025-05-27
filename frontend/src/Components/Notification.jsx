@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Notification.css';
+import Support from './Support';
 
 const Notification = () => {
+  const [emailBody, setEmailBody] = useState("");
   const [data, setData] = useState([]);
   const [showPopup, setShowPopup] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
   const [toastMessage, setToastMessage] = useState('');
   const [showToast, setShowToast] = useState(false);
-
 
   useEffect(() => {
     getData();
@@ -54,6 +55,12 @@ const Notification = () => {
     setSelectedItem(item);
     setShowPopup(true);
   };
+  const handleRejectEmail = ()=>{
+    console.log(emailBody);
+    console.log(selectedItem?.email);
+    
+    
+  }
 
   const handleJustReject = () => {
     alert(`Just rejected ${selectedItem?.name}`);
@@ -85,6 +92,19 @@ const Notification = () => {
             <p><strong>Joining Date:</strong> {item.doj}</p>
             <p><strong>Completion Date:</strong> {item.doc}</p>
             <p><strong>Internship Type:</strong> {item.type}</p>
+            <p>
+              <strong>Internship Letter:</strong>{" "}
+              <a
+                href={`http://localhost:7890${item.internshipLetter}`}
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="download-link"
+              >
+                Download
+              </a>
+            </p>
+
             <div className="btn-group">
               <button className="btn accept-btn" onClick={() => handleAccept(item)}>Accept</button>
               <button className="btn reject-btn" onClick={() => handleReject(item)}>Reject</button>
@@ -100,9 +120,24 @@ const Notification = () => {
           <div className="popup-box">
             <button className="close-btn" onClick={() => setShowPopup(false)}>×</button>
             <p className="popup-title">Choose a rejection option:</p>
+            <Support />
             <div className="popup-buttons">
-              <button className="btn just-reject" onClick={handleJustReject}>Just Reject</button>
-              <button className="btn reject-msg" onClick={handleRejectWithMessage}>Reject with Message</button>
+              <label htmlFor="email">Email:</label>
+              <input type="email" name="email" id="email" value={selectedItem.email} />
+              <label htmlFor="body">Body:</label><br/>
+              <textarea
+                name="body"
+                id="body"
+                rows="10"
+                cols="37"
+                placeholder="Write your message here..."
+                required
+                value={emailBody}
+                onChange={(e)=>setEmailBody(e.target.value)}
+              ></textarea>
+              <button  onClick={handleRejectEmail}>SEND</button>
+              {/* <button className="btn just-reject" onClick={handleJustReject}>Just Reject</button>
+              <button className="btn reject-msg" onClick={handleRejectWithMessage}>Reject with Message</button> */}
             </div>
           </div>
         </div>
