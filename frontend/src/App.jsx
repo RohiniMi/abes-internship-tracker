@@ -6,7 +6,7 @@ import Support from "./Components/Support.jsx";
 import Footer from "./Components/Footer.jsx";
 import Login from "./Components/Login.jsx";
 import "./App.css";
-// import Dashboard from './Components/Dashboard.jsx';
+
 import Dashboard2 from './Components/Dashboard2.jsx';
 import HODDashboard from './Components/HODDashboard.jsx';
 import Notification from './Components/Notification.jsx';

@@ -196,3 +196,13 @@
         transform: translateY(0);
     }
 }
+
+.download-link {
+    color: #007bff;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.download-link:hover {
+    color: #0056b3;
+}

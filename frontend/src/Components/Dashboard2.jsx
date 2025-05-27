@@ -3,10 +3,12 @@ import axios from 'axios';
 import * as XLSX from 'xlsx';
 import { saveAs } from 'file-saver';
 import "./Dashboard2.css";
+import CCPD from './CCPD';
+import CCPD2 from './CCPD2.jsx'
 const Dashboard2 = () => {
     const [data, setData] = useState([]);
     const [selectedBatch, setSelectedBatch] = useState('All');
-    const [year,setYear] = useState("");
+    const [year, setYear] = useState("");
 
     useEffect(() => {
         getData();
@@ -48,6 +50,8 @@ const Dashboard2 = () => {
 
     return (
         <div className="dashboard-container">
+            {/* <CCPD></CCPD> */}
+            <CCPD2></CCPD2>
             <h2>Internship Dashboard</h2>
             <div className="controls">
                 <label htmlFor="batchSelect">Select Batch: </label>
