@@ -17,7 +17,7 @@ const Notification = () => {
 
   const getData = async () => {
     try {
-      const res = await axios.post("http://localhost:7890/notification/dept", { dept: "CSE" });
+      const res = await axios.post("http://localhost:7890/department/notification", { dept: "CSE" });
       setData(res.data.data);
       (res.data.data).forEach(element => {
         console.log(element._id);

@@ -13,7 +13,8 @@ const Header = () => {
           <Link to="/hod-dashboard"><button>Department</button></Link>
         </div>
         <div className="right-nav">
-        <Link to="/notification"><button>Notifications</button></Link>
+          <Link to="/notification"><button>Notifications</button></Link>
+          <Link to="/send-id-pass"><button>Send ID & Pass</button></Link>
           <Link to="/login"><button>Login</button></Link>
         </div>
       </div>
