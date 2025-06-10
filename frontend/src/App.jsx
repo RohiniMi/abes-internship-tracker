@@ -6,10 +6,10 @@ import Support from "./Components/Support.jsx";
 import Footer from "./Components/Footer.jsx";
 import Login from "./Components/Login.jsx";
 import "./App.css";
-
 import Dashboard2 from './Components/Dashboard2.jsx';
 import HODDashboard from './Components/HODDashboard.jsx';
 import Notification from './Components/Notification.jsx';
+import SendIDPass from './Components/SendIDPass.jsx';
 
 const App = () => {
   return (
@@ -21,6 +21,7 @@ const App = () => {
           <Route path="/internship" element={<Main />} />
           <Route path="/hod-dashboard" element={<HODDashboard />} />
           <Route path="/notification" element={<Notification />} />
+          <Route path="/send-id-pass" element={<SendIDPass />} />
           <Route path="/login" element={<Login />} />
         </Routes>
         <Support />
