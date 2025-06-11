@@ -5,35 +5,35 @@ import { generatePassword } from "../utils/generatePassword.js";
 import sendEmail from "../mailer.js";
 import StudentLogin from "../models/studentLogin.js";
 export const findDepartmentWiseNotification = async (dept) => {
-    let status = 500;
-    let data = [];
-    try {
-        data = await Student.StudentRaw.find({ "branch": dept });
-        if (data.length > 0) status = 200;
-        console.log(data);
+  let status = 500;
+  let data = [];
+  try {
+    data = await Student.StudentRaw.find({ "branch": dept });
+    if (data.length > 0) status = 200;
+    console.log(data);
 
-        return { status, data };
-    } catch (error) {
-        console.error("Error fetching student data:", error);
-        return { status, data };
-    }
+    return { status, data };
+  } catch (error) {
+    console.error("Error fetching student data:", error);
+    return { status, data };
+  }
 }
 export const saveInternship = async (id) => {
-    let status = 500;
-    let message = "Unsuccessful";
-    try {
-        const data = await Student.StudentRaw.findById(id);
-        if (data) {
-            await Student.Student.create(data.toObject());
-            await Student.StudentRaw.findByIdAndDelete(id);
-            status = 200;
-            message = "Successful";
-        }
-        return { status, message };
-    } catch (error) {
-        console.error("Error fetching student data:", error);
-        return { status, message };
+  let status = 500;
+  let message = "Unsuccessful";
+  try {
+    const data = await Student.StudentRaw.findById(id);
+    if (data) {
+      await Student.Student.create(data.toObject());
+      await Student.StudentRaw.findByIdAndDelete(id);
+      status = 200;
+      message = "Successful";
     }
+    return { status, message };
+  } catch (error) {
+    console.error("Error fetching student data:", error);
+    return { status, message };
+  }
 }
 
 export const sendEmailofIdPass = async (file, body) => {
@@ -42,33 +42,44 @@ export const sendEmailofIdPass = async (file, body) => {
     const sheet = workbook.SheetNames[0];
     const data = xlsx.utils.sheet_to_json(workbook.Sheets[sheet]);
 
-    const emailList = data
-      .map(row => row.Email || row.email || row["Email ID"])
-      .filter(email => !!email);
-
     const createdUsers = [];
 
-    for (const email of emailList) {
+    for (const row of data) {
+      const email = row.Email || row.email || row["Email ID"];
+      const role = (row.Role || row.role || "student").toLowerCase();
+      const department = row.Department || row.department || null;
+
+      if (!email || !["admin", "ccpd", "hod", "student"].includes(role)) {
+        console.warn(`Skipping invalid row: ${JSON.stringify(row)}`);
+        continue;
+      }
+
+      if (role === "hod" && !department) {
+        console.warn(`Skipping HOD with no department: ${email}`);
+        continue;
+      }
+
       const rawPassword = generatePassword();
       const hashedPassword = await bcrypt.hash(rawPassword, 10);
 
-      // Save in DB
       const student = await StudentLogin.create({
         email,
         password: hashedPassword,
-        mustChangePassword: true // optional flag to enforce password change
+        role,
+        department: role === "hod" ? department : undefined,
+        mustChangePassword: true
       });
 
       // Send Email
-      const emailBody = `Hello,\n\nYour login credentials are:\nEmail: ${email}\nPassword: ${rawPassword}\n\nPlease change your password after first login.`;
+      const emailBody = `Hello,\n\nYour login credentials are:\nEmail: ${email}\nPassword: ${rawPassword}\nRole: ${role}\n${department ? `Department: ${department}\n` : ""}\nPlease change your password after first login.`;
       await sendEmail(email, "Login Credentials", emailBody);
 
-      createdUsers.push({ email });
+      createdUsers.push({ email, role, department });
     }
 
     return {
       status: 200,
-      message: "Emails sent and passwords stored successfully",
+      message: "Emails sent and users created successfully.",
       data: createdUsers
     };
 
