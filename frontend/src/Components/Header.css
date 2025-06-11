@@ -38,3 +38,117 @@
 .nav-container button:hover {
     background-color: #ffd8b2;
 }
+
+.user-info {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #333;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logout-btn {
+    background-color: #e74c3c;
+    border: none;
+    padding: 4px 8px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+.user-dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user-icon {
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+.user-icon:hover {
+    transform: scale(1.1);
+}
+
+.user-role {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 4px;
+    text-align: center;
+}
+
+.user-dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user-icon {
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+.user-icon:hover {
+    transform: scale(1.1);
+}
+
+.user-role {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 4px;
+    text-align: center;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 48px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 180px;
+    padding: 8px 0;
+}
+
+.dropdown-section {
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #333;
+}
+
+.dropdown-email {
+    margin-top: 4px;
+    font-size: 13px;
+    color: #666;
+    word-break: break-all;
+}
+
+.dropdown-menu button {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #e28743;
+    font-weight: bold;
+}
+
+.dropdown-menu button:hover {
+    background-color: #ffd8b2;
+}
