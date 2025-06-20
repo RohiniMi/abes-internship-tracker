@@ -23,6 +23,8 @@ export const saveInternship = async (id) => {
   let message = "Unsuccessful";
   try {
     const data = await Student.StudentRaw.findById(id);
+    console.log("accepted internship");
+    
     if (data) {
       await Student.Student.create(data.toObject());
       await Student.StudentRaw.findByIdAndDelete(id);

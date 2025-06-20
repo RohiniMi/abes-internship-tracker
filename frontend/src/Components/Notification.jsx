@@ -32,7 +32,9 @@ const Notification = () => {
 
   const handleAccept = async (item) => {
     try {
-      const res = await axios.post("http://localhost:7890/notification/internship", { "id": item._id });
+      
+      console.log("handle accept",item._id);
+      const res = await axios.post("http://localhost:7890/department/internship", { "id": item._id });
       if (res.status === 200) {
         setToastMessage(`Accepted request of ${item.name}`);
         setShowToast(true);

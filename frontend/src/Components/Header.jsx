@@ -9,6 +9,8 @@ const Header = () => {
   const role = storage.getItem("role");
   const department = storage.getItem("department");
   const email = storage.getItem("email");
+  console.log(email,"from header");
+  
   const navigate = useNavigate();
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
