@@ -59,7 +59,7 @@ const Login = () => {
 
             storage.setItem("token", res.data.token);
             storage.setItem("role", res.data.role);
-            localStorage.setItem("email", data.email);
+            storage.setItem("email", data.email);
 
             if (res.data.department) {
                 storage.setItem("department", res.data.department);
@@ -108,16 +108,15 @@ const Login = () => {
                         {showPassword ? <AiFillEyeInvisible /> : <AiFillEye />}
                     </span>
                 </div>
-
-                {/* <label className="remember-me">
+                <div className='remember-container'>
                     <input
                         type="checkbox"
                         checked={rememberMe}
                         onChange={() => setRememberMe(!rememberMe)}
+                        id="rememberMe"
                     />
-                    Remember Me
-                </label> */}
-
+                    <label htmlFor="rememberMe" className="remember-me">Remember Me</label>
+                </div>
                 <button type="submit">Login</button>
             </form>
         </div>
