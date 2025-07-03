@@ -1,43 +1,114 @@
+.dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.dashboard-sidebar {
+    width: 20%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.sidebar-title {
+    font-size: 22px;
+    margin-bottom: 1rem;
+    color: #333d29;
+    font-weight: 600;
+}
+
+.dashboard-sidebar label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #333;
+}
+
+.dashboard-sidebar select {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+
+.dashboard-main {
+    width: 80%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.dashboard-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #333d29;
+    margin-bottom: 24px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 20px;
+}
+
 .card {
     background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     overflow: hidden;
     width: 100%;
-    max-width: 100%;
     box-sizing: border-box;
-    padding: 3rem;
+    padding: 2rem;
+    transition: transform 0.2s ease-in-out;
 }
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
 .card-header {
-    background-color: #003366; /* deep navy blue */
+    background-color: #333d29;
     color: #ffffff;
     padding: 20px;
     text-align: center;
+    border-radius: 8px 8px 0 0;
 }
+
 .card-header h3 {
     margin: 0;
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 600;
 }
+
 .card-body {
     background-color: #f9f9f9;
     padding: 20px;
 }
+
 .card-body p {
-    font-size: 19px;
+    font-size: 17px;
     margin: 10px 0;
 }
+
 .status-box {
     padding: 16px;
     border-radius: 10px;
     margin-bottom: 16px;
     color: #fff;
 }
+
 .paid-status {
-    background-color: #28a745;
+    background-color: #c2c5aa;
 }
+
 .unpaid-status {
-    background-color: #dc3545;
+    background-color: #936639;
 }
+
 .sub-status {
     display: flex;
     justify-content: space-between;
@@ -48,20 +119,66 @@
 
 .sub-status p {
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .download-btn {
-    background-color: #007bff;
+    background-color: #333d29;
     color: white;
     border: none;
     padding: 10px 18px;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 16px;
 }
 
 .download-btn:hover {
-    background-color: #0056b3;
+    background-color: #191e14;
+}
+
+@media screen and (max-width: 768px) {
+    .dashboard-layout {
+        flex-direction: column;
+    }
+
+    .dashboard-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .dashboard-main {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.selected-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.chip {
+    background-color: #e6f0ff;
+    color: #333d29;
+    padding: 6px 10px;
+    border-radius: 9999px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.remove-chip {
+    background: none;
+    border: none;
+    color: #191e14;
+    font-weight: bold;
+    margin-left: 8px;
+    cursor: pointer;
 }

@@ -1,0 +1,98 @@
+Date : 2025-07-01 15:47:21
+Directory : c:\Users\rohin\Desktop\mailer\frontend
+Total : 51 files,  3154 codes, 21 comments, 250 blanks, all 3425 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| JSON           |          4 |      1,716 |          0 |          0 |      1,716 |
+| JavaScript JSX |         15 |      1,071 |         10 |        168 |      1,249 |
+| PostCSS        |          8 |        801 |         20 |        129 |        950 |
+| HTML           |          1 |         13 |          0 |          1 |         14 |
+| Markdown       |          1 |          7 |          0 |          6 |         13 |
+| XML            |          2 |          2 |          0 |          0 |          2 |
+| Properties     |          1 |         -5 |          0 |          0 |         -5 |
+| JavaScript     |         19 |       -451 |         -9 |        -54 |       -514 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                     | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                        |         51 |      3,154 |         21 |        250 |      3,425 |
+| . (Files)                                                                |          6 |      3,191 |          1 |         13 |      3,205 |
+| ..                                                                       |         19 |     -1,918 |        -10 |        -61 |     -1,989 |
+| ..\backend                                                               |         19 |     -1,918 |        -10 |        -61 |     -1,989 |
+| ..\backend (Files)                                                       |          5 |     -1,495 |         -2 |        -14 |     -1,511 |
+| ..\backend\config                                                        |          1 |        -10 |          0 |          0 |        -10 |
+| ..\backend\controller                                                    |          3 |        -48 |         -4 |         -3 |        -55 |
+| ..\backend\models                                                        |          2 |        -35 |          0 |         -2 |        -37 |
+| ..\backend\routes                                                        |          3 |        -22 |         -1 |         -5 |        -28 |
+| ..\backend\services                                                      |          3 |       -281 |         -1 |        -31 |       -313 |
+| ..\backend\utils                                                         |          2 |        -27 |         -2 |         -6 |        -35 |
+| public                                                                   |          1 |          1 |          0 |          0 |          1 |
+| src                                                                      |         25 |      1,880 |         30 |        298 |      2,208 |
+| src (Files)                                                              |          3 |         60 |          1 |          7 |         68 |
+| src\Components                                                           |         20 |      1,812 |         29 |        290 |      2,131 |
+| src\assets                                                               |          1 |          1 |          0 |          0 |          1 |
+| src\utils                                                                |          1 |          7 |          0 |          1 |          8 |
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                 | language       | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| c:\Users\rohin\Desktop\mailer\backend\.env                               | Properties     |         -5 |          0 |          0 |         -5 |
+| c:\Users\rohin\Desktop\mailer\backend\config\db.js                       | JavaScript     |        -10 |          0 |          0 |        -10 |
+| c:\Users\rohin\Desktop\mailer\backend\controller\dashboard.js            | JavaScript     |        -21 |         -4 |         -1 |        -26 |
+| c:\Users\rohin\Desktop\mailer\backend\controller\login.js                | JavaScript     |        -10 |          0 |         -2 |        -12 |
+| c:\Users\rohin\Desktop\mailer\backend\controller\notification.js         | JavaScript     |        -17 |          0 |          0 |        -17 |
+| c:\Users\rohin\Desktop\mailer\backend\index.js                           | JavaScript     |        -42 |         -1 |         -7 |        -50 |
+| c:\Users\rohin\Desktop\mailer\backend\mailer.js                          | JavaScript     |        -30 |         -1 |         -5 |        -36 |
+| c:\Users\rohin\Desktop\mailer\backend\models\student.js                  | JavaScript     |        -19 |          0 |          0 |        -19 |
+| c:\Users\rohin\Desktop\mailer\backend\models\studentLogin.js             | JavaScript     |        -16 |          0 |         -2 |        -18 |
+| c:\Users\rohin\Desktop\mailer\backend\package-lock.json                  | JSON           |     -1,393 |          0 |         -1 |     -1,394 |
+| c:\Users\rohin\Desktop\mailer\backend\package.json                       | JSON           |        -25 |          0 |         -1 |        -26 |
+| c:\Users\rohin\Desktop\mailer\backend\routes\dashboard.js                | JavaScript     |         -9 |         -1 |         -2 |        -12 |
+| c:\Users\rohin\Desktop\mailer\backend\routes\login.js                    | JavaScript     |         -5 |          0 |         -1 |         -6 |
+| c:\Users\rohin\Desktop\mailer\backend\routes\notification.js             | JavaScript     |         -8 |          0 |         -2 |        -10 |
+| c:\Users\rohin\Desktop\mailer\backend\services\dashboard.js              | JavaScript     |       -152 |          0 |        -12 |       -164 |
+| c:\Users\rohin\Desktop\mailer\backend\services\login.js                  | JavaScript     |        -51 |          0 |         -5 |        -56 |
+| c:\Users\rohin\Desktop\mailer\backend\services\notification.js           | JavaScript     |        -78 |         -1 |        -14 |        -93 |
+| c:\Users\rohin\Desktop\mailer\backend\utils\generatePassword.js          | JavaScript     |         -8 |          0 |         -1 |         -9 |
+| c:\Users\rohin\Desktop\mailer\backend\utils\multerConfig.js              | JavaScript     |        -19 |         -2 |         -5 |        -26 |
+| c:\Users\rohin\Desktop\mailer\frontend\README.md                         | Markdown       |          7 |          0 |          6 |         13 |
+| c:\Users\rohin\Desktop\mailer\frontend\eslint.config.js                  | JavaScript     |         32 |          0 |          2 |         34 |
+| c:\Users\rohin\Desktop\mailer\frontend\index.html                        | HTML           |         13 |          0 |          1 |         14 |
+| c:\Users\rohin\Desktop\mailer\frontend\package-lock.json                 | JSON           |      3,097 |          0 |          1 |      3,098 |
+| c:\Users\rohin\Desktop\mailer\frontend\package.json                      | JSON           |         37 |          0 |          1 |         38 |
+| c:\Users\rohin\Desktop\mailer\frontend\public\vite.svg                   | XML            |          1 |          0 |          0 |          1 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\App.css                       | PostCSS        |          4 |          0 |          1 |          5 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\App.jsx                       | JavaScript JSX |         48 |          1 |          4 |         53 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\CCPD.jsx           | JavaScript JSX |         44 |          0 |          7 |         51 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\CCPD2.jsx          | JavaScript JSX |         73 |          0 |          8 |         81 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\Dashboard.css      | PostCSS        |         40 |          0 |          7 |         47 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\Dashboard.jsx      | JavaScript JSX |         47 |          1 |          8 |         56 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\Dashboard2.css     | PostCSS        |        158 |         10 |         27 |        195 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\Dashboard2.jsx     | JavaScript JSX |        122 |          1 |         19 |        142 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\Footer.jsx         | JavaScript JSX |         11 |          0 |          2 |         13 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\HODDashboard.jsx   | JavaScript JSX |         94 |          0 |         14 |        108 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\Header.css         | PostCSS        |        133 |          0 |         21 |        154 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\Header.jsx         | JavaScript JSX |         82 |          0 |          8 |         90 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\Login.css          | PostCSS        |        163 |          7 |         26 |        196 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\Login.jsx          | JavaScript JSX |        127 |          2 |         16 |        145 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\Main.css           | PostCSS        |         69 |          0 |         10 |         79 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\Main.jsx           | JavaScript JSX |        131 |          3 |         30 |        164 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\Notification.css   | PostCSS        |        174 |          3 |         31 |        208 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\Notification.jsx   | JavaScript JSX |        129 |          2 |         22 |        153 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\ProtectedRoute.jsx | JavaScript JSX |         15 |          0 |          6 |         21 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\SendIDPass.jsx     | JavaScript JSX |         57 |          0 |          9 |         66 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\Support.css        | PostCSS        |         60 |          0 |          6 |         66 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\Support.jsx        | JavaScript JSX |         83 |          0 |         13 |         96 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\assets\react.svg              | XML            |          1 |          0 |          0 |          1 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\main.jsx                      | JavaScript JSX |          8 |          0 |          2 |         10 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\utils\getUserInfo.js          | JavaScript     |          7 |          0 |          1 |          8 |
+| c:\Users\rohin\Desktop\mailer\frontend\vite.config.js                    | JavaScript     |          5 |          1 |          2 |          8 |
+| Total                                                                    |                |      3,154 |         21 |        250 |      3,425 |
++--------------------------------------------------------------------------+----------------+------------+------------+------------+------------+

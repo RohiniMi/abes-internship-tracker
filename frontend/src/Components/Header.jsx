@@ -9,8 +9,8 @@ const Header = () => {
   const role = storage.getItem("role");
   const department = storage.getItem("department");
   const email = storage.getItem("email");
-  console.log(email,"from header");
-  
+  console.log(email, "from header");
+
   const navigate = useNavigate();
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
@@ -33,8 +33,9 @@ const Header = () => {
 
   return (
     <div className="header">
-      <h1>Student Internship Tracker</h1>
       <div className="nav-container">
+        <h1 className="header-title">Student Internship Tracker</h1>
+
         <div className="left-nav">
           {(role === "admin" || role === "ccpd") && (
             <Link to="/home"><button>Home</button></Link>
