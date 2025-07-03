@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import * as XLSX from 'xlsx';
 import { saveAs } from 'file-saver';
-import "./Dashboard2.css";
+import "./Dashboard2.css"; // reuse your styling
+
 const HODDashboard = () => {
-    const [data, setData] = useState([]);
+    const [data, setData] = useState(null);
     const [selectedBatch, setSelectedBatch] = useState('All');
-    const [year,setYear] = useState("");
-    const dept = "CSE";
+    const [year, setYear] = useState('');
+    const department = 'CSE'; // Hardcoded for HOD of CSE
 
     useEffect(() => {
         getData();
@@ -15,20 +16,28 @@ const HODDashboard = () => {
 
     const getData = async () => {
         try {
-            const res = await axios.post("http://localhost:7890/dashboard/batch/dept", { selectedBatch,dept });
-            setData(res.data.data[0]);
+            const res = await axios.post("http://localhost:7890/dashboard/batch/dept", {
+                selectedBatch,
+                dept: department
+            });
+            setData(res.data.data);
             setYear(res.data.batch);
         } catch (err) {
             console.error("Error fetching data:", err);
             alert("Failed to fetch. Please try again.");
         }
     };
+
     const handleBatchChange = (e) => {
         setSelectedBatch(e.target.value);
     };
+
     const downloadExcel = async () => {
         try {
-            const res = await axios.post("http://localhost:7890/dashboard/batch/dept/download", { selectedBatch,dept });
+            const res = await axios.post("http://localhost:7890/dashboard/batch/dept/download", {
+                selectedBatch,
+                dept: department
+            });
             const jsonData = res.data.data;
             if (!jsonData || jsonData.length === 0) {
                 alert("No data available to export.");
@@ -36,10 +45,10 @@ const HODDashboard = () => {
             }
             const worksheet = XLSX.utils.json_to_sheet(jsonData);
             const workbook = XLSX.utils.book_new();
-            XLSX.utils.book_append_sheet(workbook, worksheet, selectedBatch);
+            XLSX.utils.book_append_sheet(workbook, worksheet, department);
             const excelBuffer = XLSX.write(workbook, { bookType: 'xlsx', type: 'array' });
             const dataBlob = new Blob([excelBuffer], { type: 'application/octet-stream' });
-            const fileName = `Internships_${selectedBatch}_${new Date().toISOString().slice(0, 10)}.xlsx`;
+            const fileName = `Internships_${department}_${selectedBatch}_${new Date().toISOString().slice(0, 10)}.xlsx`;
             saveAs(dataBlob, fileName);
         } catch (err) {
             console.error("Error generating Excel:", err);
@@ -49,7 +58,8 @@ const HODDashboard = () => {
 
     return (
         <div className="dashboard-container">
-            <h2>CSE Department Internship Dashboard</h2>
+            <h2>{department} Department Internship Dashboard</h2>
+
             <div className="controls">
                 <label htmlFor="batchSelect">Select Batch: </label>
                 <select id="batchSelect" onChange={handleBatchChange} value={selectedBatch}>
@@ -58,6 +68,7 @@ const HODDashboard = () => {
                     <option value="Final">2021-2025</option>
                 </select>
             </div>
+
             {data && (
                 <div className="card">
                     <div className="card-header">
@@ -90,7 +101,7 @@ const HODDashboard = () => {
                 </div>
             )}
         </div>
-    )
-}
+    );
+};
 
 export default HODDashboard;

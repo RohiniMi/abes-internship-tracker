@@ -1,27 +1,20 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
-const CCPD2 = () => {
-  const allDepartments = ["CSE", "CSE_AIML", "IT", "DS", "CE", "ELCE"];
+const CCPD2 = ({ selectedBatch, data, setData }) => {
+  const allDepartments = ["CSE", "CSE-AIML", "IT", "DS", "CE", "ELCE"];
   const [selectedDepartments, setSelectedDepartments] = useState([]);
 
   const handleSelect = (e) => {
     const value = e.target.value;
-
     if (value === "All") {
-      // Always select all departments when "All" is selected
       setSelectedDepartments([...allDepartments]);
     } else {
-      if (selectedDepartments.length === allDepartments.length) {
-        // Reset to just this department if all were previously selected
-        setSelectedDepartments([value]);
-      } else {
-        // Toggle department on or off
-        setSelectedDepartments(prev =>
-          prev.includes(value)
-            ? prev.filter(item => item !== value)
-            : [...prev, value]
-        );
-      }
+      setSelectedDepartments(prev =>
+        prev.includes(value)
+          ? prev.filter(item => item !== value)
+          : [...prev, value]
+      );
     }
   };
 
@@ -29,43 +22,38 @@ const CCPD2 = () => {
     setSelectedDepartments(prev => prev.filter(d => d !== dept));
   };
 
+  const callApiForData = async () => {
+    try {
+      const res = await axios.post("http://localhost:7890/dashboard/batch-and-branch", {
+        selectedBatch,
+        selectedDepartments,
+      });
+      setData(res.data.data);
+    } catch (err) {
+      console.error("Error fetching data:", err);
+      alert("Failed to fetch. Please try again.");
+    }
+  };
+
   useEffect(() => {
-    console.log("Selected Departments:", selectedDepartments);
-  }, [selectedDepartments]);
+    if (selectedDepartments.length === 0) {
+      setData([]);
+      return;
+    }
+    if (selectedBatch) {
+      callApiForData();
+    }
+  }, [selectedDepartments, selectedBatch]);
 
   return (
-    <div className="max-w-md mx-auto p-4 border rounded shadow space-y-4">
-      <h2 className="text-lg font-bold">Select Department (Gmail-style):</h2>
-
-      {/* Display selected departments as chips */}
-      <div className="flex flex-wrap gap-2">
-        {selectedDepartments.length === 0 && (
-          <p className="text-gray-500">No departments selected</p>
-        )}
-        {selectedDepartments.map((dept, idx) => (
-          <span
-            key={idx}
-            className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm flex items-center"
-          >
-            + {dept}
-            <button
-              className="ml-2 text-red-600 font-bold"
-              onClick={() => removeDept(dept)}
-            >
-              ×
-            </button>
-          </span>
-        ))}
-      </div>
-
-      {/* Select dropdown */}
+    <div className="filter-section">
+      <label htmlFor="departmentSelect">Select Department:</label>
       <select
         id="departmentSelect"
         onChange={handleSelect}
-        className="w-full border px-3 py-2 rounded"
-        defaultValue=""
+        value=""
       >
-        <option value="" disabled>-- Select Department --</option>
+        <option value="" disabled>-- Choose --</option>
         <option value="All">Select All</option>
         {allDepartments.map((dept, index) => (
           <option key={index} value={dept}>
@@ -73,6 +61,18 @@ const CCPD2 = () => {
           </option>
         ))}
       </select>
+      <div className="selected-chips">
+        {selectedDepartments.length === 0 ? (
+          <p className="text-muted">No departments selected</p>
+        ) : (
+          selectedDepartments.map((dept, index) => (
+            <span className="chip" key={index}>
+              {dept}
+              <button className="remove-chip" onClick={() => removeDept(dept)}>×</button>
+            </span>
+          ))
+        )}
+      </div>
     </div>
   );
 };

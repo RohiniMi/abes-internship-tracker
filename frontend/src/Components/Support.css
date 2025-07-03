@@ -2,7 +2,7 @@
     position: fixed;
     bottom: 25px;
     right: 25px;
-    background-color: #e28743;
+    background-color: #333d29;
     color: white;
     padding: 12px 20px;
     font-size: 15px;
@@ -15,7 +15,7 @@
 }
 
 .support-btn:hover {
-    background-color: #c46d30;
+    background-color: #191e14;
 }
 
 #mail {
@@ -52,7 +52,7 @@
 }
 
 #send-email {
-    background-color: #e28743;
+    background-color: #333d29;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -62,5 +62,5 @@
 }
 
 #send-email:hover {
-    background-color: #c46d30;
+    background-color: #191e14;
 }
