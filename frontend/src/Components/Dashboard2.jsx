@@ -64,7 +64,6 @@ const Dashboard2 = () => {
 
     return (
         <div className="dashboard-layout">
-            {/* Sidebar */}
             <div className="dashboard-sidebar">
                 <h2 className="sidebar-title">Filters</h2>
 

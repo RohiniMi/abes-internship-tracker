@@ -10,6 +10,7 @@ import HODDashboard from './Components/HODDashboard.jsx';
 import Notification from './Components/Notification.jsx';
 import SendIDPass from './Components/SendIDPass.jsx';
 import ProtectedRoute from './Components/ProtectedRoute.jsx'; // 👈 Import this
+import AdminManagedWork from './Components/AdminManagedWork.jsx';
 
 const App = () => {
   return (
@@ -40,6 +41,10 @@ const App = () => {
           <Route
             path="/send-id-pass"
             element={<ProtectedRoute element={SendIDPass} allowedRoles={['hod', 'admin']} />}
+          />
+          <Route
+            path="/admin-manage"
+            element={<ProtectedRoute element={AdminManagedWork} allowedRoles={['admin']} />}
           />
         </Routes>
         <Support />

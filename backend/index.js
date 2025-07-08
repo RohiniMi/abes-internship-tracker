@@ -9,7 +9,7 @@ import dashboardRoutes from "./routes/dashboard.js";
 import notificationRoutes from "./routes/notification.js";
 import loginRoutes from "./routes/login.js"
 import upload from "./utils/multerConfig.js"; // <== use this
-
+import adminRoutes from "./routes/admin.js"
 dotenv.config();
 connectDB();
 
@@ -22,6 +22,7 @@ app.use('/uploads', express.static('uploads'));
 app.use("/dashboard", dashboardRoutes);
 app.use("/department", notificationRoutes);
 app.use("/login",loginRoutes);
+app.use("/admin",adminRoutes);
 app.post("/internship", upload.single("internshipLetter"), async (req, res) => {
   try {
     const formData = JSON.parse(req.body.data);

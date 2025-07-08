@@ -1,0 +1,24 @@
+"filename", "language", "JSON", "JavaScript", "PostCSS", "Properties", "JavaScript JSX", "comment", "blank", "total"
+"c:\Users\rohin\Desktop\mailer\backend\.env", "Properties", 0, 0, 0, 5, 0, 0, 0, 5
+"c:\Users\rohin\Desktop\mailer\backend\config\db.js", "JavaScript", 0, 10, 0, 0, 0, 0, 0, 10
+"c:\Users\rohin\Desktop\mailer\backend\controller\dashboard.js", "JavaScript", 0, 21, 0, 0, 0, 4, 1, 26
+"c:\Users\rohin\Desktop\mailer\backend\controller\login.js", "JavaScript", 0, 10, 0, 0, 0, 0, 2, 12
+"c:\Users\rohin\Desktop\mailer\backend\controller\notification.js", "JavaScript", 0, 17, 0, 0, 0, 0, 0, 17
+"c:\Users\rohin\Desktop\mailer\backend\index.js", "JavaScript", 0, 42, 0, 0, 0, 1, 7, 50
+"c:\Users\rohin\Desktop\mailer\backend\mailer.js", "JavaScript", 0, 30, 0, 0, 0, 1, 5, 36
+"c:\Users\rohin\Desktop\mailer\backend\models\student.js", "JavaScript", 0, 19, 0, 0, 0, 0, 0, 19
+"c:\Users\rohin\Desktop\mailer\backend\models\studentLogin.js", "JavaScript", 0, 16, 0, 0, 0, 0, 2, 18
+"c:\Users\rohin\Desktop\mailer\backend\package-lock.json", "JSON", 1393, 0, 0, 0, 0, 0, 1, 1394
+"c:\Users\rohin\Desktop\mailer\backend\package.json", "JSON", 25, 0, 0, 0, 0, 0, 1, 26
+"c:\Users\rohin\Desktop\mailer\backend\routes\dashboard.js", "JavaScript", 0, 9, 0, 0, 0, 1, 2, 12
+"c:\Users\rohin\Desktop\mailer\backend\routes\login.js", "JavaScript", 0, 5, 0, 0, 0, 0, 1, 6
+"c:\Users\rohin\Desktop\mailer\backend\routes\notification.js", "JavaScript", 0, 8, 0, 0, 0, 0, 2, 10
+"c:\Users\rohin\Desktop\mailer\backend\services\dashboard.js", "JavaScript", 0, 152, 0, 0, 0, 0, 12, 164
+"c:\Users\rohin\Desktop\mailer\backend\services\login.js", "JavaScript", 0, 51, 0, 0, 0, 0, 5, 56
+"c:\Users\rohin\Desktop\mailer\backend\services\notification.js", "JavaScript", 0, 78, 0, 0, 0, 1, 14, 93
+"c:\Users\rohin\Desktop\mailer\backend\utils\generatePassword.js", "JavaScript", 0, 8, 0, 0, 0, 0, 1, 9
+"c:\Users\rohin\Desktop\mailer\backend\utils\multerConfig.js", "JavaScript", 0, 19, 0, 0, 0, 2, 5, 26
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\Dashboard2.css", "PostCSS", 0, 0, 0, 0, 0, -10, -1, -11
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\Header.css", "PostCSS", 0, 0, -13, 0, 0, 0, -5, -18
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\Header.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 1, 1
+"Total", "-", 1418, 495, -13, 5, 0, 0, 56, 1961

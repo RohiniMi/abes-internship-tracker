@@ -1,0 +1,61 @@
+Date : 2025-07-03 11:44:17
+Directory : c:\Users\rohin\Desktop\mailer
+Total : 22 files,  1905 codes, 0 comments, 56 blanks, all 1961 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| JSON           |          2 |      1,418 |          0 |          2 |      1,420 |
+| JavaScript     |         16 |        495 |         10 |         59 |        564 |
+| Properties     |          1 |          5 |          0 |          0 |          5 |
+| JavaScript JSX |          1 |          0 |          0 |          1 |          1 |
+| PostCSS        |          2 |        -13 |        -10 |         -6 |        -29 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                 | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                    |         22 |      1,905 |          0 |         56 |      1,961 |
+| backend                                                              |         19 |      1,918 |         10 |         61 |      1,989 |
+| backend (Files)                                                      |          5 |      1,495 |          2 |         14 |      1,511 |
+| backend\config                                                       |          1 |         10 |          0 |          0 |         10 |
+| backend\controller                                                   |          3 |         48 |          4 |          3 |         55 |
+| backend\models                                                       |          2 |         35 |          0 |          2 |         37 |
+| backend\routes                                                       |          3 |         22 |          1 |          5 |         28 |
+| backend\services                                                     |          3 |        281 |          1 |         31 |        313 |
+| backend\utils                                                        |          2 |         27 |          2 |          6 |         35 |
+| frontend                                                             |          3 |        -13 |        -10 |         -5 |        -28 |
+| frontend\src                                                         |          3 |        -13 |        -10 |         -5 |        -28 |
+| frontend\src\Components                                              |          3 |        -13 |        -10 |         -5 |        -28 |
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                             | language       | code       | comment    | blank      | total      |
++----------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| c:\Users\rohin\Desktop\mailer\backend\.env                           | Properties     |          5 |          0 |          0 |          5 |
+| c:\Users\rohin\Desktop\mailer\backend\config\db.js                   | JavaScript     |         10 |          0 |          0 |         10 |
+| c:\Users\rohin\Desktop\mailer\backend\controller\dashboard.js        | JavaScript     |         21 |          4 |          1 |         26 |
+| c:\Users\rohin\Desktop\mailer\backend\controller\login.js            | JavaScript     |         10 |          0 |          2 |         12 |
+| c:\Users\rohin\Desktop\mailer\backend\controller\notification.js     | JavaScript     |         17 |          0 |          0 |         17 |
+| c:\Users\rohin\Desktop\mailer\backend\index.js                       | JavaScript     |         42 |          1 |          7 |         50 |
+| c:\Users\rohin\Desktop\mailer\backend\mailer.js                      | JavaScript     |         30 |          1 |          5 |         36 |
+| c:\Users\rohin\Desktop\mailer\backend\models\student.js              | JavaScript     |         19 |          0 |          0 |         19 |
+| c:\Users\rohin\Desktop\mailer\backend\models\studentLogin.js         | JavaScript     |         16 |          0 |          2 |         18 |
+| c:\Users\rohin\Desktop\mailer\backend\package-lock.json              | JSON           |      1,393 |          0 |          1 |      1,394 |
+| c:\Users\rohin\Desktop\mailer\backend\package.json                   | JSON           |         25 |          0 |          1 |         26 |
+| c:\Users\rohin\Desktop\mailer\backend\routes\dashboard.js            | JavaScript     |          9 |          1 |          2 |         12 |
+| c:\Users\rohin\Desktop\mailer\backend\routes\login.js                | JavaScript     |          5 |          0 |          1 |          6 |
+| c:\Users\rohin\Desktop\mailer\backend\routes\notification.js         | JavaScript     |          8 |          0 |          2 |         10 |
+| c:\Users\rohin\Desktop\mailer\backend\services\dashboard.js          | JavaScript     |        152 |          0 |         12 |        164 |
+| c:\Users\rohin\Desktop\mailer\backend\services\login.js              | JavaScript     |         51 |          0 |          5 |         56 |
+| c:\Users\rohin\Desktop\mailer\backend\services\notification.js       | JavaScript     |         78 |          1 |         14 |         93 |
+| c:\Users\rohin\Desktop\mailer\backend\utils\generatePassword.js      | JavaScript     |          8 |          0 |          1 |          9 |
+| c:\Users\rohin\Desktop\mailer\backend\utils\multerConfig.js          | JavaScript     |         19 |          2 |          5 |         26 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\Dashboard2.css | PostCSS        |          0 |        -10 |         -1 |        -11 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\Header.css     | PostCSS        |        -13 |          0 |         -5 |        -18 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\Header.jsx     | JavaScript JSX |          0 |          0 |          1 |          1 |
+| Total                                                                |                |      1,905 |          0 |         56 |      1,961 |
++----------------------------------------------------------------------+----------------+------------+------------+------------+------------+

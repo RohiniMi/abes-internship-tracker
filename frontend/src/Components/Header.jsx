@@ -57,6 +57,9 @@ const Header = () => {
         </div>
 
         <div className="right-nav" ref={dropdownRef}>
+          {(role === "admin" || role === "hod") && (
+            <Link to="/admin-manage"><button>Manage</button></Link>
+          )}
           {token ? (
             <div className="user-dropdown">
               <FaUserCircle
