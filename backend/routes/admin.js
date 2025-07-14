@@ -17,7 +17,11 @@ import {
     updateSession,
     deleteSession
 } from "../controller/admin/session.js"
-
+import {
+    sendCredentialsToSingleUser,
+    sendCredentialsToBulk
+} from "../controller/admin/credentials.js";
+import upload from '../utils/multerConfig.js';
 
 const router = express.Router();
 
@@ -36,4 +40,6 @@ router.post('/manage-sessions', createSession);
 router.put('/manage-sessions/:id', updateSession);
 router.delete('/manage-sessions/:id', deleteSession);
 
+router.post("/send-credentials/single-user",sendCredentialsToSingleUser);
+router.post("/send-credentials/bulk",upload.single("file"),sendCredentialsToBulk);
 export default router;

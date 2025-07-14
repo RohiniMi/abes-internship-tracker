@@ -1,0 +1,81 @@
+"filename", "language", "XML", "JavaScript", "Markdown", "JSON", "JavaScript JSX", "Properties", "PostCSS", "HTML", "comment", "blank", "total"
+"c:\Users\rohin\Desktop\mailer\backend\.env", "Properties", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 6
+"c:\Users\rohin\Desktop\mailer\backend\config\db.js", "JavaScript", 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 10
+"c:\Users\rohin\Desktop\mailer\backend\controller\admin\credentials.js", "JavaScript", 0, 19, 0, 0, 0, 0, 0, 0, 0, 3, 22
+"c:\Users\rohin\Desktop\mailer\backend\controller\admin\department.js", "JavaScript", 0, 33, 0, 0, 0, 0, 0, 0, 0, 6, 39
+"c:\Users\rohin\Desktop\mailer\backend\controller\admin\section.js", "JavaScript", 0, 33, 0, 0, 0, 0, 0, 0, 0, 4, 37
+"c:\Users\rohin\Desktop\mailer\backend\controller\admin\session.js", "JavaScript", 0, 33, 0, 0, 0, 0, 0, 0, 0, 4, 37
+"c:\Users\rohin\Desktop\mailer\backend\controller\dashboard.js", "JavaScript", 0, 21, 0, 0, 0, 0, 0, 0, 4, 1, 26
+"c:\Users\rohin\Desktop\mailer\backend\controller\login.js", "JavaScript", 0, 10, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"c:\Users\rohin\Desktop\mailer\backend\controller\notification.js", "JavaScript", 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 17
+"c:\Users\rohin\Desktop\mailer\backend\index.js", "JavaScript", 0, 70, 0, 0, 0, 0, 0, 0, 0, 14, 84
+"c:\Users\rohin\Desktop\mailer\backend\mailer.js", "JavaScript", 0, 30, 0, 0, 0, 0, 0, 0, 0, 5, 35
+"c:\Users\rohin\Desktop\mailer\backend\models\Messenger\Message.js", "JavaScript", 0, 9, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"c:\Users\rohin\Desktop\mailer\backend\models\Messenger\User.js", "JavaScript", 0, 7, 0, 0, 0, 0, 0, 0, 0, 3, 10
+"c:\Users\rohin\Desktop\mailer\backend\models\admin.js", "JavaScript", 0, 13, 0, 0, 0, 0, 0, 0, 0, 2, 15
+"c:\Users\rohin\Desktop\mailer\backend\models\student.js", "JavaScript", 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 19
+"c:\Users\rohin\Desktop\mailer\backend\models\studentLogin.js", "JavaScript", 0, 17, 0, 0, 0, 0, 0, 0, 0, 2, 19
+"c:\Users\rohin\Desktop\mailer\backend\package-lock.json", "JSON", 0, 0, 0, 1798, 0, 0, 0, 0, 0, 1, 1799
+"c:\Users\rohin\Desktop\mailer\backend\package.json", "JSON", 0, 0, 0, 27, 0, 0, 0, 0, 0, 1, 28
+"c:\Users\rohin\Desktop\mailer\backend\routes\admin.js", "JavaScript", 0, 40, 0, 0, 0, 0, 0, 0, 0, 6, 46
+"c:\Users\rohin\Desktop\mailer\backend\routes\dashboard.js", "JavaScript", 0, 9, 0, 0, 0, 0, 0, 0, 1, 2, 12
+"c:\Users\rohin\Desktop\mailer\backend\routes\login.js", "JavaScript", 0, 5, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"c:\Users\rohin\Desktop\mailer\backend\routes\messenger\message.js", "JavaScript", 0, 52, 0, 0, 0, 0, 0, 0, 6, 16, 74
+"c:\Users\rohin\Desktop\mailer\backend\routes\messenger\user.js", "JavaScript", 0, 17, 0, 0, 0, 0, 0, 0, 0, 5, 22
+"c:\Users\rohin\Desktop\mailer\backend\routes\notification.js", "JavaScript", 0, 8, 0, 0, 0, 0, 0, 0, 0, 2, 10
+"c:\Users\rohin\Desktop\mailer\backend\services\admin\credentials.js", "JavaScript", 0, 87, 0, 0, 0, 0, 0, 0, 0, 11, 98
+"c:\Users\rohin\Desktop\mailer\backend\services\admin\department.js", "JavaScript", 0, 17, 0, 0, 0, 0, 0, 0, 0, 8, 25
+"c:\Users\rohin\Desktop\mailer\backend\services\admin\section.js", "JavaScript", 0, 22, 0, 0, 0, 0, 0, 0, 0, 9, 31
+"c:\Users\rohin\Desktop\mailer\backend\services\admin\session.js", "JavaScript", 0, 22, 0, 0, 0, 0, 0, 0, 0, 9, 31
+"c:\Users\rohin\Desktop\mailer\backend\services\dashboard.js", "JavaScript", 0, 152, 0, 0, 0, 0, 0, 0, 0, 12, 164
+"c:\Users\rohin\Desktop\mailer\backend\services\login.js", "JavaScript", 0, 51, 0, 0, 0, 0, 0, 0, 0, 5, 56
+"c:\Users\rohin\Desktop\mailer\backend\services\notification.js", "JavaScript", 0, 78, 0, 0, 0, 0, 0, 0, 0, 12, 90
+"c:\Users\rohin\Desktop\mailer\backend\utils\generatePassword.js", "JavaScript", 0, 8, 0, 0, 0, 0, 0, 0, 0, 1, 9
+"c:\Users\rohin\Desktop\mailer\backend\utils\multerConfig.js", "JavaScript", 0, 19, 0, 0, 0, 0, 0, 0, 0, 5, 24
+"c:\Users\rohin\Desktop\mailer\frontend\README.md", "Markdown", 0, 0, 7, 0, 0, 0, 0, 0, 0, 6, 13
+"c:\Users\rohin\Desktop\mailer\frontend\eslint.config.js", "JavaScript", 0, 32, 0, 0, 0, 0, 0, 0, 0, 2, 34
+"c:\Users\rohin\Desktop\mailer\frontend\index.html", "HTML", 0, 0, 0, 0, 0, 0, 0, 13, 0, 1, 14
+"c:\Users\rohin\Desktop\mailer\frontend\package-lock.json", "JSON", 0, 0, 0, 3224, 0, 0, 0, 0, 0, 1, 3225
+"c:\Users\rohin\Desktop\mailer\frontend\package.json", "JSON", 0, 0, 0, 38, 0, 0, 0, 0, 0, 1, 39
+"c:\Users\rohin\Desktop\mailer\frontend\public\vite.svg", "XML", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\rohin\Desktop\mailer\frontend\src\App.css", "PostCSS", 0, 0, 0, 0, 0, 0, 4, 0, 0, 1, 5
+"c:\Users\rohin\Desktop\mailer\frontend\src\App.jsx", "JavaScript JSX", 0, 0, 0, 0, 43, 0, 0, 0, 0, 5, 48
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\ADMIN\AdminManagedWork.jsx", "JavaScript JSX", 0, 0, 0, 0, 93, 0, 0, 0, 1, 6, 100
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\ADMIN\ManageCredentials.css", "PostCSS", 0, 0, 0, 0, 0, 0, 63, 0, 0, 10, 73
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\ADMIN\ManageCredentials.jsx", "JavaScript JSX", 0, 0, 0, 0, 29, 0, 0, 0, 0, 5, 34
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\ADMIN\ManageDepartment.jsx", "JavaScript JSX", 0, 0, 0, 0, 95, 0, 0, 0, 0, 14, 109
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\ADMIN\ManageMultipleUserForm.jsx", "JavaScript JSX", 0, 0, 0, 0, 50, 0, 0, 0, 0, 10, 60
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\ADMIN\ManageSections.jsx", "JavaScript JSX", 0, 0, 0, 0, 95, 0, 0, 0, 0, 14, 109
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\ADMIN\ManageSessions.jsx", "JavaScript JSX", 0, 0, 0, 0, 95, 0, 0, 0, 0, 14, 109
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\ADMIN\ManageSingleUserForm.jsx", "JavaScript JSX", 0, 0, 0, 0, 76, 0, 0, 0, 0, 13, 89
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\ADMIN\ManageUsers.jsx", "JavaScript JSX", 0, 0, 0, 0, 7, 0, 0, 0, 0, 2, 9
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\CCPD.jsx", "JavaScript JSX", 0, 0, 0, 0, 44, 0, 0, 0, 0, 7, 51
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\CCPD2.jsx", "JavaScript JSX", 0, 0, 0, 0, 73, 0, 0, 0, 0, 8, 81
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\ChatWindow.css", "PostCSS", 0, 0, 0, 0, 0, 0, 62, 0, 0, 8, 70
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\ChatWindow.jsx", "JavaScript JSX", 0, 0, 0, 0, 143, 0, 0, 0, 1, 17, 161
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\Dashboard.css", "PostCSS", 0, 0, 0, 0, 0, 0, 40, 0, 0, 7, 47
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\Dashboard.jsx", "JavaScript JSX", 0, 0, 0, 0, 47, 0, 0, 0, 1, 8, 56
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\Dashboard2.css", "PostCSS", 0, 0, 0, 0, 0, 0, 158, 0, 0, 26, 184
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\Dashboard2.jsx", "JavaScript JSX", 0, 0, 0, 0, 122, 0, 0, 0, 0, 19, 141
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\Footer.jsx", "JavaScript JSX", 0, 0, 0, 0, 11, 0, 0, 0, 0, 2, 13
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\HODDashboard.jsx", "JavaScript JSX", 0, 0, 0, 0, 94, 0, 0, 0, 0, 14, 108
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\Header.css", "PostCSS", 0, 0, 0, 0, 0, 0, 120, 0, 0, 16, 136
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\Header.jsx", "JavaScript JSX", 0, 0, 0, 0, 89, 0, 0, 0, 0, 9, 98
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\Login.css", "PostCSS", 0, 0, 0, 0, 0, 0, 163, 0, 7, 26, 196
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\Login.jsx", "JavaScript JSX", 0, 0, 0, 0, 129, 0, 0, 0, 1, 16, 146
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\Main.css", "PostCSS", 0, 0, 0, 0, 0, 0, 69, 0, 0, 10, 79
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\Main.jsx", "JavaScript JSX", 0, 0, 0, 0, 131, 0, 0, 0, 3, 30, 164
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\MessengerPanel.jsx", "JavaScript JSX", 0, 0, 0, 0, 87, 0, 0, 0, 0, 11, 98
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\Notification.css", "PostCSS", 0, 0, 0, 0, 0, 0, 174, 0, 3, 31, 208
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\Notification.jsx", "JavaScript JSX", 0, 0, 0, 0, 129, 0, 0, 0, 2, 22, 153
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\ProtectedRoute.jsx", "JavaScript JSX", 0, 0, 0, 0, 15, 0, 0, 0, 0, 6, 21
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\SendIDPass.jsx", "JavaScript JSX", 0, 0, 0, 0, 57, 0, 0, 0, 0, 9, 66
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\Support.css", "PostCSS", 0, 0, 0, 0, 0, 0, 60, 0, 0, 6, 66
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\Support.jsx", "JavaScript JSX", 0, 0, 0, 0, 83, 0, 0, 0, 0, 13, 96
+"c:\Users\rohin\Desktop\mailer\frontend\src\Components\Support2.jsx", "JavaScript JSX", 0, 0, 0, 0, 83, 0, 0, 0, 0, 13, 96
+"c:\Users\rohin\Desktop\mailer\frontend\src\assets\react.svg", "XML", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\rohin\Desktop\mailer\frontend\src\context\SocketContext.jsx", "JavaScript JSX", 0, 0, 0, 0, 28, 0, 0, 0, 0, 9, 37
+"c:\Users\rohin\Desktop\mailer\frontend\src\main.jsx", "JavaScript JSX", 0, 0, 0, 0, 8, 0, 0, 0, 0, 2, 10
+"c:\Users\rohin\Desktop\mailer\frontend\src\utils\getUserInfo.js", "JavaScript", 0, 7, 0, 0, 0, 0, 0, 0, 0, 1, 8
+"c:\Users\rohin\Desktop\mailer\frontend\vite.config.js", "JavaScript", 0, 5, 0, 0, 0, 0, 0, 0, 1, 2, 8
+"Total", "-", 2, 972, 7, 5087, 1956, 6, 913, 13, 31, 608, 9595

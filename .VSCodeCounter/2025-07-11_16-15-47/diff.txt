@@ -1,0 +1,92 @@
+Date : 2025-07-11 16:15:47
+Directory : c:\Users\rohin\Desktop\mailer
+Total : 42 files,  1979 codes, 0 comments, 241 blanks, all 2220 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| JavaScript JSX |         16 |        885 |         -1 |        129 |      1,013 |
+| JSON           |          4 |        535 |          0 |          0 |        535 |
+| JavaScript     |         19 |        433 |          1 |         94 |        528 |
+| PostCSS        |          2 |        125 |          0 |         18 |        143 |
+| Properties     |          1 |          1 |          0 |          0 |          1 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                   | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                      |         42 |      1,979 |          0 |        241 |      2,220 |
+| backend                                                                                |         22 |        841 |          1 |         94 |        936 |
+| backend (Files)                                                                        |          5 |        436 |         -2 |          7 |        441 |
+| backend\controller                                                                     |          4 |        118 |          0 |         17 |        135 |
+| backend\controller\admin                                                               |          4 |        118 |          0 |         17 |        135 |
+| backend\models                                                                         |          4 |         30 |          0 |          8 |         38 |
+| backend\models (Files)                                                                 |          2 |         14 |          0 |          2 |         16 |
+| backend\models\Messenger                                                               |          2 |         16 |          0 |          6 |         22 |
+| backend\routes                                                                         |          3 |        109 |          6 |         27 |        142 |
+| backend\routes (Files)                                                                 |          1 |         40 |          0 |          6 |         46 |
+| backend\routes\messenger                                                               |          2 |         69 |          6 |         21 |         96 |
+| backend\services                                                                       |          5 |        148 |         -1 |         35 |        182 |
+| backend\services (Files)                                                               |          1 |          0 |         -1 |         -2 |         -3 |
+| backend\services\admin                                                                 |          4 |        148 |          0 |         37 |        185 |
+| backend\utils                                                                          |          1 |          0 |         -2 |          0 |         -2 |
+| frontend                                                                               |         20 |      1,138 |         -1 |        147 |      1,284 |
+| frontend (Files)                                                                       |          2 |        128 |          0 |          0 |        128 |
+| frontend\src                                                                           |         18 |      1,010 |         -1 |        147 |      1,156 |
+| frontend\src (Files)                                                                   |          1 |         -5 |         -1 |          1 |         -5 |
+| frontend\src\Components                                                                |         16 |        987 |          0 |        137 |      1,124 |
+| frontend\src\Components (Files)                                                        |          7 |        384 |         -1 |         49 |        432 |
+| frontend\src\Components\ADMIN                                                          |          9 |        603 |          1 |         88 |        692 |
+| frontend\src\context                                                                   |          1 |         28 |          0 |          9 |         37 |
++----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                               | language       | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| c:\Users\rohin\Desktop\mailer\backend\.env                                             | Properties     |          1 |          0 |          0 |          1 |
+| c:\Users\rohin\Desktop\mailer\backend\controller\admin\credentials.js                  | JavaScript     |         19 |          0 |          3 |         22 |
+| c:\Users\rohin\Desktop\mailer\backend\controller\admin\department.js                   | JavaScript     |         33 |          0 |          6 |         39 |
+| c:\Users\rohin\Desktop\mailer\backend\controller\admin\section.js                      | JavaScript     |         33 |          0 |          4 |         37 |
+| c:\Users\rohin\Desktop\mailer\backend\controller\admin\session.js                      | JavaScript     |         33 |          0 |          4 |         37 |
+| c:\Users\rohin\Desktop\mailer\backend\index.js                                         | JavaScript     |         28 |         -1 |          7 |         34 |
+| c:\Users\rohin\Desktop\mailer\backend\mailer.js                                        | JavaScript     |          0 |         -1 |          0 |         -1 |
+| c:\Users\rohin\Desktop\mailer\backend\models\Messenger\Message.js                      | JavaScript     |          9 |          0 |          3 |         12 |
+| c:\Users\rohin\Desktop\mailer\backend\models\Messenger\User.js                         | JavaScript     |          7 |          0 |          3 |         10 |
+| c:\Users\rohin\Desktop\mailer\backend\models\admin.js                                  | JavaScript     |         13 |          0 |          2 |         15 |
+| c:\Users\rohin\Desktop\mailer\backend\models\studentLogin.js                           | JavaScript     |          1 |          0 |          0 |          1 |
+| c:\Users\rohin\Desktop\mailer\backend\package-lock.json                                | JSON           |        405 |          0 |          0 |        405 |
+| c:\Users\rohin\Desktop\mailer\backend\package.json                                     | JSON           |          2 |          0 |          0 |          2 |
+| c:\Users\rohin\Desktop\mailer\backend\routes\admin.js                                  | JavaScript     |         40 |          0 |          6 |         46 |
+| c:\Users\rohin\Desktop\mailer\backend\routes\messenger\message.js                      | JavaScript     |         52 |          6 |         16 |         74 |
+| c:\Users\rohin\Desktop\mailer\backend\routes\messenger\user.js                         | JavaScript     |         17 |          0 |          5 |         22 |
+| c:\Users\rohin\Desktop\mailer\backend\services\admin\credentials.js                    | JavaScript     |         87 |          0 |         11 |         98 |
+| c:\Users\rohin\Desktop\mailer\backend\services\admin\department.js                     | JavaScript     |         17 |          0 |          8 |         25 |
+| c:\Users\rohin\Desktop\mailer\backend\services\admin\section.js                        | JavaScript     |         22 |          0 |          9 |         31 |
+| c:\Users\rohin\Desktop\mailer\backend\services\admin\session.js                        | JavaScript     |         22 |          0 |          9 |         31 |
+| c:\Users\rohin\Desktop\mailer\backend\services\notification.js                         | JavaScript     |          0 |         -1 |         -2 |         -3 |
+| c:\Users\rohin\Desktop\mailer\backend\utils\multerConfig.js                            | JavaScript     |          0 |         -2 |          0 |         -2 |
+| c:\Users\rohin\Desktop\mailer\frontend\package-lock.json                               | JSON           |        127 |          0 |          0 |        127 |
+| c:\Users\rohin\Desktop\mailer\frontend\package.json                                    | JSON           |          1 |          0 |          0 |          1 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\App.jsx                                     | JavaScript JSX |         -5 |         -1 |          1 |         -5 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\ADMIN\AdminManagedWork.jsx       | JavaScript JSX |         93 |          1 |          6 |        100 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\ADMIN\ManageCredentials.css      | PostCSS        |         63 |          0 |         10 |         73 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\ADMIN\ManageCredentials.jsx      | JavaScript JSX |         29 |          0 |          5 |         34 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\ADMIN\ManageDepartment.jsx       | JavaScript JSX |         95 |          0 |         14 |        109 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\ADMIN\ManageMultipleUserForm.jsx | JavaScript JSX |         50 |          0 |         10 |         60 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\ADMIN\ManageSections.jsx         | JavaScript JSX |         95 |          0 |         14 |        109 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\ADMIN\ManageSessions.jsx         | JavaScript JSX |         95 |          0 |         14 |        109 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\ADMIN\ManageSingleUserForm.jsx   | JavaScript JSX |         76 |          0 |         13 |         89 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\ADMIN\ManageUsers.jsx            | JavaScript JSX |          7 |          0 |          2 |          9 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\ChatWindow.css                   | PostCSS        |         62 |          0 |          8 |         70 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\ChatWindow.jsx                   | JavaScript JSX |        143 |          1 |         17 |        161 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\Dashboard2.jsx                   | JavaScript JSX |          0 |         -1 |          0 |         -1 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\Header.jsx                       | JavaScript JSX |          7 |          0 |          0 |          7 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\Login.jsx                        | JavaScript JSX |          2 |         -1 |          0 |          1 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\MessengerPanel.jsx               | JavaScript JSX |         87 |          0 |         11 |         98 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\Components\Support2.jsx                     | JavaScript JSX |         83 |          0 |         13 |         96 |
+| c:\Users\rohin\Desktop\mailer\frontend\src\context\SocketContext.jsx                   | JavaScript JSX |         28 |          0 |          9 |         37 |
+| Total                                                                                  |                |      1,979 |          0 |        241 |      2,220 |
++----------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+

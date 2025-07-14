@@ -26,7 +26,6 @@ const AdminManagedWork = () => {
 
     return (
         <div style={{ display: 'flex', minHeight: '100vh' }}>
-            {/* Sidebar */}
             <div style={{ width: '240px', background: '#f0f0f0', padding: '1rem' }}>
                 <h3>Sections</h3>
                 <ul style={{ listStyle: 'none', padding: 0 }}>
@@ -83,7 +82,7 @@ const AdminManagedWork = () => {
                             backgroundColor: activeSection === 'credentials' ? '#ddd' : 'transparent'
                         }}
                     >
-                        Credentails
+                        Credentials
                     </li>
                 </ul>
             </div>

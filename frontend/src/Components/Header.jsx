@@ -10,6 +10,7 @@ const Header = () => {
   const department = storage.getItem("department");
   const email = storage.getItem("email");
   console.log(email, "from header");
+  console.log(role, "from header");
 
   const navigate = useNavigate();
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -59,6 +60,9 @@ const Header = () => {
         <div className="right-nav" ref={dropdownRef}>
           {(role === "admin" || role === "hod") && (
             <Link to="/admin-manage"><button>Manage</button></Link>
+          )}
+          {["admin", "hod", "ccpd", "student"].includes(role) && (
+            <Link to="/messenger"><button>Messages</button></Link>
           )}
           {token ? (
             <div className="user-dropdown">

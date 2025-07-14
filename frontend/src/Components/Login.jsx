@@ -59,7 +59,10 @@ const Login = () => {
         if (!email || !password) return alert("Please fill all fields.");
 
         try {
-            const res = await axios.post("http://localhost:7890/login", data);
+            console.log("Hi Inside api");
+
+            const res = await axios.post("http://172.16.48.192:7890/login", data);
+            console.log("Hi after api");
             alert(res.data.message);
             const storage = rememberMe ? localStorage : sessionStorage;
             storage.setItem("token", res.data.token);
@@ -119,8 +122,6 @@ const Login = () => {
                     <button type="submit">Login</button>
                 </form>
             </div>
-
-            {/* RIGHT: Slick Slider */}
             <div className="login-right">
                 <div className="slider-container">
                     <h2 className="slider-title">Explore with Us</h2>

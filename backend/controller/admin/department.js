@@ -1,6 +1,5 @@
 import * as departmentService from "../../services/admin/department.js";
 
-
 export const getAllDepartments = async (req, res) => {
   try {
     const departments = await departmentService.getAllDepartments();
