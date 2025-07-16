@@ -8,7 +8,7 @@ export const SocketProvider = ({ children, userId }) => {
 
   useEffect(() => {
     if (userId) {
-      const newSocket = io("http://172.16.48.192:7890");
+      const newSocket = io("http://localhost:7890");
 
       newSocket.on("connect", () => {
         console.log("🟢 Socket connected:", newSocket.id);

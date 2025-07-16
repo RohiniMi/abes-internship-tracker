@@ -3,7 +3,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import axios from 'axios';
 import { useSocket } from '../context/SocketContext.jsx';
 
-const API = "http://172.16.48.192:7890/messenger";
+const API = "http://localhost:7890/messenger";
 
 const ChatWindow = ({ currentUserId, selectedUser, onBack }) => {
     const [messages, setMessages] = useState([]);

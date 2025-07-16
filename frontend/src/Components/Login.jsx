@@ -61,7 +61,7 @@ const Login = () => {
         try {
             console.log("Hi Inside api");
 
-            const res = await axios.post("http://172.16.48.192:7890/login", data);
+            const res = await axios.post("http://localhost:7890/login", data);
             console.log("Hi after api");
             alert(res.data.message);
             const storage = rememberMe ? localStorage : sessionStorage;

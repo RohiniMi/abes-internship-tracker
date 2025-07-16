@@ -4,7 +4,7 @@ import ChatWindow from './ChatWindow';
 import { useSocket } from '../context/SocketContext';
 import { useNavigate } from 'react-router-dom'; 
 
-const API = "http://172.16.48.192:7890/messenger";
+const API = "http://localhost:7890/messenger";
 
 const MessengerPanel = () => {
     const storage = localStorage.getItem("token") ? localStorage : sessionStorage;

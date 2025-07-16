@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 const studentLoginSchema = new mongoose.Schema({
-    name: { type: String, required: true},
+    name: { type: String},
     email: { type: String, required: true, unique: true },
     password: String,
     role: {
